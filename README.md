@@ -11,11 +11,9 @@ With CLI for Microsoft 365
 4. Stable Internet connection (Ethernet connection is preferred instead of Wi-Fi network)
 5. Power policy of the host is set to prevent sleeping during the uploading process
 
-### PowerShell Policy
+### Update PowerShell Policy
 1. Open the PowerShell terminal with local Administrator
-2. Execute `Set-ExecutionPolicy RemoteSigned`
-3. In case if error is shown `Access to the registry key 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\1\ShellIds\Microsoft.PowerShell' is denied.`
-4. Execute `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser` instead
+2. Execute `Set-ExecutionPolicy Unrestricted -Scope CurrentUser` instead
 
 ### Install CLI for Microsoft 365
 1. Install nvm-windows: https://github.com/coreybutler/nvm-windows/releases
